@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+//import 'package:english_words/english_words.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 void main() => runApp(const XylophoneApp());
@@ -38,12 +38,15 @@ class XylophoneApp extends StatelessWidget {
             //@todo: check layout
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              buildExpandedKey(bgColor: Colors.red, numberSound: 1),
-              buildExpandedKey(bgColor: Colors.green, numberSound: 2),
+              buildExpandedKey(
+                  bgColor: Colors.red, numberSound: 1, mainText: 'Teo`'),
+              buildExpandedKey(
+                  bgColor: Colors.green, numberSound: 2, mainText: 'Bum`'),
               buildExpandedKey(bgColor: Colors.yellow, numberSound: 3),
               buildExpandedKey(bgColor: Colors.teal, numberSound: 4),
               buildExpandedKey(bgColor: Colors.blue, numberSound: 5),
-              buildExpandedKey(bgColor: Colors.brown, numberSound: 6),
+              buildExpandedKey(
+                  bgColor: Colors.brown, numberSound: 6, mainText: 'sexy'),
               buildExpandedKey(bgColor: Colors.deepOrange, numberSound: 7),
             ],
           ),
